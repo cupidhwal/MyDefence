@@ -8,7 +8,7 @@ namespace MyDefence
     public class CameraManager : MonoBehaviour
     {
         #region
-        //ÇÊµå
+        //í•„ë“œ
         private float moveSpeed;
         private float border;
         private float minHeight;
@@ -49,7 +49,7 @@ namespace MyDefence
 
 
 
-            //Å° ÀÔ·Â¿¡ µû¸¥ ½ºÅ©¸° ÀÌµ¿
+            //í‚¤ ì…ë ¥ì— ë”°ë¥¸ ìŠ¤í¬ë¦° ì´ë™
             hMove = Input.GetAxis("Horizontal") * Time.deltaTime;
             vMove = Input.GetAxis("Vertical") * Time.deltaTime;
 
@@ -57,7 +57,7 @@ namespace MyDefence
 
 
 
-            //¸¶¿ì½º Á¦¾î¿¡ µû¸¥ ½ºÅ©¸° ÀÌµ¿
+            /*//ë§ˆìš°ìŠ¤ ì œì–´ì— ë”°ë¥¸ ìŠ¤í¬ë¦° ì´ë™
             mouseX = Input.mousePosition.x;
             mouseY = Input.mousePosition.y;
 
@@ -73,11 +73,11 @@ namespace MyDefence
                 cameraTransform.position += new Vector3(moveScroll, 0, 0);
 
             if (Screen.height - mouseY < border)
-                cameraTransform.position += new Vector3(0, 0, moveScroll);
+                cameraTransform.position += new Vector3(0, 0, moveScroll);*/
 
 
 
-            //¸¶¿ì½º ÈÙ ÀÔ·Â¿¡ µû¸¥ ½ºÅ©¸° ÀÌµ¿
+            //ë§ˆìš°ìŠ¤ íœ  ì…ë ¥ì— ë”°ë¥¸ ìŠ¤í¬ë¦° ì´ë™
             float moveHeight = Input.GetAxis("Mouse ScrollWheel") * 10;
             float currentHeight = cameraTransform.position.y + moveHeight;
 
